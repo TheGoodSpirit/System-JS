@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.25s;
+    box-sizing: border-box;
+}
+section {
+    position: relative;
+    gap: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+}
+#Count {
+    margin: 20px;
+    font-size: 7rem;
+}
+button {
+    margin: 2px 0px;
+    padding: 10px 20px;
+}
