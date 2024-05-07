@@ -1,4 +1,4 @@
-# JavaScript Overview for College Students
+# JavaScript Overview
 
 ## Introduction
 
