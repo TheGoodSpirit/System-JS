@@ -16,7 +16,7 @@ section {
 }
 h1 {
     font-size: 4rem;
-    font-family: "Jersey 25 Charted", sans-serif;
+    /* font-family: "Jersey 25 Charted", sans-serif; */
     padding: 5px 10px;
     border-radius: 5px;
     background-color: #FFF;

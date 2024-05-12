@@ -12,4 +12,4 @@ function changeBackground() {
     currentColr.style.color = `rgb( ${red}, ${green}, ${blue})`
     body.style.setProperty('background-color', `rgb(${red}, ${green}, ${blue})`);
 }
-window.onload = () => setInterval(()=>{changeBackground()},100)
+window.onload = () => setInterval(()=>{changeBackground()},1000)

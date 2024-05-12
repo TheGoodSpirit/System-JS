@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    transition: 0.25s;
+    transition: 1s;
     box-sizing: border-box;
 }
 section {
@@ -45,4 +45,7 @@ ion-icon:hover,
     color: #FFF;
     background: purple;
     box-shadow: 2px 2px 10px rgba(142, 68, 240, 0.454); 
+}
+h1.flip {
+    transform: rotate3d(1, 0, 0, 360deg);
 }
