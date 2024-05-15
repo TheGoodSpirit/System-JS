@@ -4,12 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DOCUMENT DOT WRITE</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 <body>
-    <header>
-        <a class="bg-black text-2xl text-white pt-10 py-5 font-bold ">Logo</a>
-    </header>
+
 </body>
-</html> 
+<script>
+
+     // Array of fruits
+     const fruits = ["apple", "banana", "watermelom", "mango", "pineapple"]
+
+    // ========== Using Array lenght ==========
+    // Open the ordered list tag
+    document.write('<ol>')
+    // Loop through each fruit in the array
+    for(let i = 0; i < fruits.length; i++) 
+     // Check if the index is less than 3
+     // If index is less than 3, write the fruit name in bold with green color
+     //  If index is 3 or more, write the fruit name underlined
+     // Close the ordered list tag
+        document.write(`
+        ${i < 3 ? `
+            <li>
+                <b style="color: green"> ${fruits[i]} </b>
+            </li> ` : 
+            `<li>
+                <u> ${fruits[i]} </u>
+            </li>`}
+    `)
+    document.write('</ol>')
+
+
+    // ========== Using Map ========== 
+    let i = 0
+    document.write('<ol>') 
+    
+    fruits.map((fruit) => { // Iterate over each fruit in the array using the map method
+        document.write(`
+            ${i < 3 ? `
+                <li>
+                    <b style="color: blue"> ${fruit} </b>
+                </li> ` : 
+                `<li>
+                    <u> ${fruit} </u>
+                </li>`
+            }
+        `)
+        i++ // Increment the counter variable
+    })
+    document.write('</ol>')
+
+</script>
+</html>
