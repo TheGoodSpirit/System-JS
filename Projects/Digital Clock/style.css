@@ -12,10 +12,16 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+}
+html body section.dark {
+    background-color: rgb(0, 0, 0);
+}
+html body section.dark p {
+    color: white;
 }
 p {
-    color: rgba(200, 197, 197, 0.308);
+    color: rgb(0, 0, 0);
     cursor: none;
     font-size: 10rem;
     padding: 10px 20px;

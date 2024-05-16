@@ -9,51 +9,12 @@
 </head>
 <body>
 
-</body>
-<script>
+    <h1 class="head1">This is a heading1.</h1>
+    <h2 class="head1">This is a heading2.</h1>
+    <h3 class="head1"> This is a heading3.</h1>
 
-     // Array of fruits
-     const fruits = ["apple", "banana", "watermelom", "mango", "pineapple"]
-
-    // ========== Using Array lenght ==========
-    // Open the ordered list tag
-    document.write('<ol>')
-    // Loop through each fruit in the array
-    for(let i = 0; i < fruits.length; i++) 
-     // Check if the index is less than 3
-     // If index is less than 3, write the fruit name in bold with green color
-     //  If index is 3 or more, write the fruit name underlined
-     // Close the ordered list tag
-        document.write(`
-        ${i < 3 ? `
-            <li>
-                <b style="color: green"> ${fruits[i]} </b>
-            </li> ` : 
-            `<li>
-                <u> ${fruits[i]} </u>
-            </li>`}
-    `)
-    document.write('</ol>')
-
-
-    // ========== Using Map ========== 
-    let i = 0
-    document.write('<ol>') 
+    <h4 id="head">This is a heading1.</h4>
     
-    fruits.map((fruit) => { // Iterate over each fruit in the array using the map method
-        document.write(`
-            ${i < 3 ? `
-                <li>
-                    <b style="color: blue"> ${fruit} </b>
-                </li> ` : 
-                `<li>
-                    <u> ${fruit} </u>
-                </li>`
-            }
-        `)
-        i++ // Increment the counter variable
-    })
-    document.write('</ol>')
-
-</script>
+</body>
+<script src="./app.js"></script>
 </html>

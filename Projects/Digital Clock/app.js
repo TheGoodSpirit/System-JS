@@ -18,3 +18,8 @@ setInterval( () => {
 const  addZero =  (num) => {
     return num >= 10 ? num : `0${num}`;
 }
+
+function changeMode() {
+    let section = document.getElementById('section')
+    section.classList.toggle('dark')
+}
