@@ -1,4 +1,5 @@
 let time = document.getElementById('time');
+let toggleBtn = document.getElementById('btn')
 time.style.userSelect = "none";
 
 setInterval( () => {
@@ -19,7 +20,8 @@ const  addZero =  (num) => {
     return num >= 10 ? num : `0${num}`;
 }
 
-function changeMode() {
-    let section = document.getElementById('section')
+
+myBTN.onclick = () => {
+    let section  = document.getElementById('section')
     section.classList.toggle('dark')
 }

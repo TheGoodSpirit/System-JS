@@ -10,7 +10,8 @@ let add = () => {
     }, 450)
 }
 let remove = () => count.innerHTML = counter = counter - 1;
-let reset = () => {
+
+resetBtn.onClick = () => {
     counter = 0;
     count.innerHTML = counter;
 }

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    gap: 10px;
+    text-align: center;
+    display: grid;
+    width: 50%;
+    height: 50vh;
+    grid-template-areas:
+        "header header"
+        "nav  aside"
+        "nav  aside"
+        "section section"
+        "footer footer";
+    grid-template-columns: repeat(2, 1fr);;
+}
+main > * {
+    border: 1px solid red;
+}
+section {grid-area: section} 
+header {grid-area: header} 
+nav {grid-area: nav}
+aside {grid-area: aside} 
+footer {grid-area: footer}
+
+span {
+    font-size: 1.2rem;
+}
+section {
+    font-size: 12px;
+}
