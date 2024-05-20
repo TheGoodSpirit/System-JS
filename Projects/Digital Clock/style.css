@@ -22,7 +22,7 @@ html body section.dark p {
 }
 p {
     color: rgb(0, 0, 0);
-    cursor: none;
+    /* cursor: none; */
     font-size: 10rem;
     padding: 10px 20px;
 }

@@ -59,3 +59,4 @@ heading.classList.add('newClass')
 //     i++ // Increment the counter variable
 // })
 // document.write('</ol>')
+
